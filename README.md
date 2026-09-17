@@ -43,7 +43,7 @@ These classes form the parent-required containment tree. See `public/vocabulary/
 | Class | Meaning |
 |---|---|
 | `wsp`       | Workspace — environment / dataspace under a Tenant |
-| `prj`       | Project — unit of work under a Workspace |
+| `prj`       | Project — unit of work under a Tenant; pins one Workspace or spans several via `visible_in_workspaces[]` |
 | `team`      | Team — RBAC + ownership group under a Workspace |
 | `res`       | Resource — owned D1 table / R2 bucket / queue / connector under a Workspace |
 | `prin`      | Principal — the acting party (Human / System / Agent) under a Workspace |
